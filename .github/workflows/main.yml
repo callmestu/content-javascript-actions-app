@@ -7,7 +7,7 @@ jobs:
     steps:
       # To use this repository's private action,
       # you must check out the repository
-      - nagit       me: Checkout
+      - name: Checkout
         uses: actions/checkout@v2 # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
